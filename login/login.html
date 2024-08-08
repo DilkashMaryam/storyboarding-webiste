@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login-form.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="fcf-body"> 
+        <div id="fcf-form">
+            <h3 class="fcf-h3">Login Details</h3>
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="login-process.php">
+                <div class="fcf-form-group"> 
+                    <label for="name" class="fcf-label">Enter your name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="name" name="name" class="fcf-form-control" required>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="email" class="fcf-label">Enter your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="email" name="email" class="fcf-form-control" required>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="password" class="fcf-label">Enter your password</label>
+                    <div class="fcf-input-group">
+                        <input type="password" id="password" name="password" class="fcf-form-control" required>
+                    </div>
+                </div>
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Login</button>
+                </div>
+                <div class="fcf-credit" id="fcf-credit">
+                    <p>&copy; 2024 Login Form</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

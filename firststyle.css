@@ -1,0 +1,163 @@
+/* Base styles */
+body {
+    font-size: 16px;
+    background-color: rgb(205, 157, 38);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: black;
+    color: white;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    padding: 10px 20px;
+    transition: background 0.4s linear, color 0.4s linear;
+}
+
+.menu a:last-child {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background: antiquewhite;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Styling for main image and container */
+.li {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.left, .right {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+.left h1, .left h2 {
+    margin: 10px 0;
+}
+
+button {
+    padding: 15px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: black;
+    color: azure;
+    font-weight: 900;
+    transition: background 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.circular-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    max-width: 500px; /* Ensure it doesn't exceed max width */
+    height: auto;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .left, .right {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .left h1, .left h2 {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .circular-image {
+        width: 100%;
+        max-width: 400px;
+    }
+}
